@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.feyon.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.NET.conn.CONNECTIVITY_CHANGE" />
+    <!-- 允许读取wifi网络状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <permission
+        android:name="me.pengtao.Read"
+        android:protectionLevel="normal" />
+
+    <!-- <uses-permission android:name="me.pengtao.READ"/> -->
+    <application
+        android:name=".ExampleApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".window.NetWorkConnectStateReceiver">
+            <intent-filter>
+                <action android:name="android.NET.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.Net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".ContentProvider.TestProvider"
+            android:authorities="me.pengtao.contentprovidertest"
+            android:exported="true"
+            android:readPermission="me.pengtao.Read" />
+        <provider
+            android:name=".sqlite2.MyProvider"
+            android:authorities="cn.scu.myprovider" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.feyon.myapplication.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fileprovider" />
+        </provider>
+
+        <activity
+            android:name=".MVPTest.Main4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Main3Activity" />
+        <activity
+            android:name=".Main2Activity"
+            android:parentActivityName=".Main3Activity"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main3Activity" />
+        </activity>
+        <activity
+            android:name=".retrofit.Main12Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".MyTestService" />
+
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Main6Activity" />
+        <activity android:name=".Main5Activity" />
+        <activity android:name=".Main7Activity" />
+        <activity android:name=".Main8Activity" />
+        <activity android:name=".Main9Activity" />
+        <activity android:name=".Main10Activity" />
+        <activity android:name=".Main11Activity" />
+        <activity android:name=".rxjava.Main13Activity" />
+        <activity android:name=".okhttp.Main14Activity" />
+        <activity android:name=".ok_re_rx.Main15Activity" />
+        <activity android:name=".AudioRecord.Main16Activity" />
+        <activity android:name=".JNI.Main17Activity" />
+        <activity android:name=".MyCustomView.Main18Activity" />
+        <activity android:name=".glide.Main19Activity" />
+        <activity android:name=".glide.Main20Activity" />
+        <activity android:name=".sqlite.Main21Activity" />
+        <activity android:name=".luckPlane.Main22Activity" />
+        <activity android:name=".window.Main23Activity" />
+        <activity android:name=".glide.Main24Activity" />
+        <activity android:name=".window.BaseActivity" />
+        <activity android:name=".MVP.acticity.Main27Activity" />
+        <activity
+            android:name=".ContentProvider.Main28Activity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Main29Activity" />
+        <activity android:name=".constraintlayout.Main30Activity" />
+        <activity android:name=".custom_views.Main31Activity" />
+        <activity android:name=".Main32Activity" />
+        <activity android:name=".cropImage.Main33Activity" />
+        <activity android:name=".Main34Activity" />
+        <activity android:name=".Main35Activity" />
+
+        <!-- <receiver android:name=".BroadcastReceiver.MyBroadcastReceiver" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true" -->
+        <!-- android:permission=""> -->
+        <!-- &lt;!&ndash;&ndash;&gt; -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/> -->
+        <!-- </intent-filter> -->
+
+
+        <!-- </receiver> -->
+
+        <service android:name=".Service.MyService" />
+
+        <activity android:name=".Main36Activity" />
+        <activity android:name=".sqlite2.Main37Activity" />
+        <activity android:name=".Main38Activity" />
+        <activity android:name=".Main39Activity" />
+        <activity android:name=".Main40Activity" />
+        <activity android:name=".Main41Activity" />
+        <activity android:name="yijiayou.wp.net.ejyh5navdemo.Main42Activity" />
+        <activity android:name="yijiayou.wp.net.ejyh5navdemo.Main43Activity" />
+        <activity android:name=".Main44Activity" />
+        <activity android:name=".Main45Activity" />
+        <activity android:name=".intentFlag.Main46Activity" />
+        <activity android:name=".Main47Activity" />
+        <activity android:name=".Main48Activity" />
+        <activity android:name=".NestedScroll.Main25Activity" />
+        <activity android:name=".Main26Activity">
+
+        </activity>
+        <activity android:name=".Main49Activity" />
+        <activity android:name=".AudioRecord.Main50Activity"
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

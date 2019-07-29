@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.feyon.myapplication.MyCustomView.Main18Activity">
+    <com.feyon.myapplication.MyCustomView.CustomView1
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:ctext1="helsdasdasdadsadasdadadasdadadasdasdasdasdasdasdasdasdasdasdadsdasdadsadsadsasdadlo"
+        app:ccolor1="@color/colorAccent"
+        app:ctextsize="20sp"
+        android:background="@color/colorPrimary"/>
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/id_flowlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+    </com.zhy.view.flowlayout.TagFlowLayout>
+
+   <RelativeLayout
+       android:layout_width="40dp"
+       android:layout_height="wrap_content">
+
+       <com.feyon.myapplication.MyCustomView.TriangleBottomTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@color/blue"
+           android:textColor="@color/white"
+           android:gravity="center"
+           android:textSize="13dp"
+           android:padding="3dp"
+           android:text="校园\n动态"/>
+   </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        android:background="@color/red"
+        app:tabIndicatorColor="@color/white"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/white">
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推荐" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分类" />
+    </android.support.design.widget.TabLayout>
+   <!-- <com.feyon.myapplication.MyCustomView.CTextView
+        android:id="@+id/my_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+
+    <!--<com.feyon.myapplication.MyCustomView.CCyclerView-->
+        <!--android:id="@+id/my_text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@color/colorPrimary"/>-->
+    <!--<View-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/colorPrimary"/>-->
+
+    <!--<com.feyon.myapplication.MyCustomView.CView1-->
+        <!--android:id="@+id/my_text"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:background="@color/colorAccent"/>-->
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="hello"/>-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"/>
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="hello"/>-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red"/>
+
+    <com.feyon.myapplication.MyCustomView.CViewProgress2
+        android:id="@+id/my_text"
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

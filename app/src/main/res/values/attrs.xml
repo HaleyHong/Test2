@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="ctext1" format="string"/>
+    <attr name="ccolor1" format="color"/>
+    <attr name="ctextsize" format="dimension"/>
+    <attr name="backColor" format="color"/>
+
+    <declare-styleable name="CustomView1">
+        <attr name="ctext1"/>
+        <attr name="ccolor1"/>
+        <attr name="ctextsize"/>
+        <attr name="backColor"/>
+    </declare-styleable>
+</resources>

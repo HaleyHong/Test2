@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.feyon.myapplication.custom_views.Main31Activity">
+    <com.feyon.myapplication.custom_viewGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+
+
+            android:background="@color/colorPrimary"/>
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"/>
+    </com.feyon.myapplication.custom_viewGroup>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.feyon.myapplication.Main35Activity">
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/blue">
+        <com.feyon.myapplication.MyLinearView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/red"/>
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/red" />
+
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="120dp"
+                android:background="@color/red" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/red" />
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/red" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/red" />
+
+        </com.feyon.myapplication.MyLinearView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start"
+        android:text="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/stop"
+        android:text="stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bind"
+        android:text="bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/unbind"
+        android:text="unbind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一页"/>
+
+    <Button
+        android:id="@+id/remoteService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="远程服务"/>
+    <Button
+        android:id="@+id/remoteService_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="远程服务send"/>
+</LinearLayout>
